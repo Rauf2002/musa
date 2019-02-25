@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+.intro header h1 {
+    font-size: 30px;
+    padding-top: 24px;
+    cursor: pointer;
+}
+.intro header span {
+    color: #00c9b1
+}
+ul {
+    display: flex;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 24px;
+    list-style-type: none;
+}
+ul li {
+    color: #232323;
+    padding: 15px;
+    cursor: pointer;
+}
+ul li:hover {
+    color: #00c9b1;
+    transition:all 0.5s;
+}
+ul li:first-child {
+    color: #00c9b1;
+}
+main {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 590px;
+    justify-content: center;
+}
+.intro main p:first-child {
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid rgba(128, 128, 128, 0);
+}
+.intro main p:first-child:hover {
+    border-bottom: 2px solid grey;
+    transition: all 0.3s;
+}
+.intro main h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #232323;
+    border-bottom: 1px solid rgba(128, 128, 128, 0)
+}
+
+.intro main h1:hover {
+    border-bottom: 2px solid grey;
+    transition: all 0.3s;
+}
+.intro main h1 span {
+    color: #00c9b1;
+    border-bottom: 1px solid rgba(128, 128, 128, 0)
+}
+.intro main h1 span:hover {
+    border-bottom: 2px solid #00c9b1;
+    transition: all 0.3s;
+}
+.intro main p:nth-child(3) {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #666666;
+    border-bottom: 1px solid transparent;
+}
+.intro main p:nth-child(3):hover {
+    border-bottom: 2px solid #666666;
+    transition: all 0.3s;
+}
+.intro main section {
+    display: flex;
+    width: 22%;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+.intro main section:last-child p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: white;
+    border: 1px solid #00c9b1;
+    background-color: #00c9b1;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+.intro main section:last-child p:hover  {
+    color: #00c9b1;
+    background-color: white;
+    transition: all 0.5s;
+}
+.intro footer {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+}
+.intro footer div {
+    width: 30px;
+    height: 60px;
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid #00c9b1
+}
+.intro footer div div {
+    border: 2px solid #00c9b1;
+    border-radius:100%;
+    width: 10px;
+    height: 10px;
+    background-color: #00c9b1;
+    margin-left: 8px;
+    margin-top: 4px;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-duration:1.8s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle {
+    0% {transform:translate(0px,0px) }
+    50% {transform: translate(0px,35px)}
+    100% {transform: translate(0px 0px)}
+}
