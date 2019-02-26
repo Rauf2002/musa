@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+*::selection {
+    background-color: #00c9b1;
+}
 .intro {
     width: 100%;
     position: relative;
