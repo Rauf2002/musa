@@ -1,22 +1,32 @@
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 .intro {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.intro img {
+    width:100%;
+}
 header {
     width: 74%;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 0px;
 }
 h1 {
     font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #626262;
 }
 .intro header h1 {
     font-size: 30px;
@@ -52,6 +62,7 @@ main {
     align-items: flex-start;
     height: 590px;
     justify-content: center;
+    position: absolute;
 }
 .intro main p:first-child {
     font-size: 14px;
@@ -124,9 +135,10 @@ main {
 .intro footer div {
     width: 30px;
     height: 60px;
-    position: relative;
     border-radius: 30px;
-    border: 2px solid #00c9b1
+    border: 2px solid #00c9b1;
+    position: absolute;
+    bottom: 10px;
 }
 .intro footer div div {
     border: 2px solid #00c9b1;
@@ -142,7 +154,72 @@ main {
     animation-timing-function: ease-in-out;
 }
 @keyframes circle {
-    0% {transform:translate(0px,0px) }
-    50% {transform: translate(0px,35px)}
-    100% {transform: translate(0px 0px)}
+    0% {transform:translate(0px,-30px) }
+    50% {transform: translate(0px,0px)}
+    100% {transform: translate(0px,-30px)}
+}
+div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 74%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+   letter-spacing: 1px;
+   margin-top: 80px;
+   color: #2e2e2e
+}
+.container .rect {
+    padding-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .rect section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border:  0.00625em  solid #626262;
+    padding: 40px 60px;
+    position: relative;
+    box-shadow: 0.00625em 0.00625em 10px #666666;
+    transition: all 0.3s;
+}
+.rect h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: #232323;
+     padding-top: 10px;
+}
+.rect p {
+    font-size: 13px;    
+}
+.container .rect section:hover {
+    box-shadow: 1px 1px 30px #666666;
+    transition: all 0.3s;
+    transform: scale(1.01,1.01)
+}
+.container .icon {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top:-25px;
+}
+.container .rect section:hover .icon{
+    background-color: #00c9b1;
+    transition: all 0.3s;
+}
+.icon i {
+    color: white;
+    margin: auto;
+    font-size: 20px;
 }
