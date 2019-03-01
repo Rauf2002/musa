@@ -116,7 +116,7 @@ main {
     height: 60px;
     align-items: center;
 }
-.intro main section:last-child p {
+.intro main section .slider {
     font-family: 'Dosis', sans-serif;
     z-index: 1;
     position: relative;
@@ -282,7 +282,7 @@ div {
     margin: auto;
     font-size: 20px;
 }
-div:nth-child(3) {
+.grey {
     background-color: #f6f6f6;
     display: flex;
     flex-direction: row;
@@ -297,7 +297,6 @@ div:nth-child(3) .container {
 div .about {
     display: flex;
     flex-direction: column;
-    width: 45%;
 }
 .about h3,p {
     font-family: 'Open Sans', sans-serif; 
@@ -501,4 +500,145 @@ div:nth-child(4)  .rect section:hover {
 }
 .grey .container nav ul li:hover {
     color: white;
+}
+.grey .container section:nth-child(6) { 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grey .container .photo {
+    width: 33.3%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.grey .container .photo:hover img {
+    transform: scale(1.1,1.1);
+}
+
+.grey .container .photo .hover {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    position: absolute;
+    background-color: hsla(173, 100%, 39%, 0.843);
+    opacity: 0;
+    transition:all 0.2s;
+}
+.grey .container .photo:hover .hover {
+    opacity: 1;
+}
+.grey .container .photo img {
+    width: 100%;
+    transition: all 0.5s;
+}
+.hover section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 15%;
+    height: 24%;
+    background-color: white;
+}
+.hover section i {
+    color: #00c9b1;
+}
+.hover p:nth-child(2) {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin:5px auto;
+    letter-spacing: 1px;
+}
+.hover p:last-child {
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+}
+.slider {
+    font-family: 'Dosis', sans-serif;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
+    color: white;
+    border: 1px solid #00c9b1;
+    background-color: #00c9b1;
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: all 0.4s;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.slider::before {
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    content: "";
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.slider:hover {
+    color: #00c9b1
+}
+.slider:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+/* Grass Starts */
+.grey .container section:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.grey .container section:last-child .grass {
+    width: 23%;
+    height: 174px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grass img {
+    width: 100%;
+    height: 100%;
+}
+.grey .content {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.843);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grey .content i {
+    color: #00c9b1;
+    font-size: 35px;
+}
+.grey .content p:nth-child(2) {
+    font-size: 36px;
+    color: #232323;
+    margin: 6px auto;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.grey .content p:last-child {
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
 }
