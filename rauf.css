@@ -254,8 +254,9 @@ div {
 .rect h3 {
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
+    font-weight: 400;
     color: #232323;
-     padding-top: 10px;
+    padding-top: 10px;
 }
 .rect p {
     font-size: 13px;    
@@ -418,4 +419,86 @@ div .about {
 .range section:first-child p {
     font-size: 14px;
     margin-top: 15px;
+}
+div:nth-child(4)  .rect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+div:nth-child(4)  .rect section {
+    border: 0.02em solid #ebe8e8;
+    width: 29%;
+    box-shadow: 0.001em 0.001em 0.001em rgb(216, 201, 201);
+}
+div:nth-child(4) .rect i {
+    color: #00c9b1;
+    font-size: 35px;
+}
+div:nth-child(4)  .rect section:hover {
+    transform: translate(0px, -15px) scale(1,1);
+    box-shadow: 0.001em 0.001em 0.001em rgb(216, 201, 201);
+}
+/* Photos Start */
+.grey{
+    background-color: #f6f6f6
+}
+.grey .container nav ul {
+    margin: 20px 0px 20px 0px;
+}
+.grey .container nav ul li {
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    background-color: #dddddd;
+    padding: 5px 30px;
+    margin: 10px;
+    font-size: 14px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.4s;
+}
+.grey .container nav ul li:first-child {
+    color: white;
+    border: 1px solid #00c9b1;
+    background-color: #00c9b1;
+}
+.grey .container nav ul li:first-child i {
+    position: absolute;
+    transform: rotate(45deg);
+    color: #00c9b1;
+    left: 33px;
+}
+.grey .container nav ul li::before {
+    z-index: -1;
+    opacity: 0;;
+    content: "";
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 0;
+    position: absolute;
+    background-color: #00c9b1;
+    transition: all 0.4s;
+}
+.grey .container nav ul li::after {
+    z-index: -1;
+    opacity: 0;;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 0;
+    position: absolute;
+    background-color: #00c9b1;
+    transition: all 0.4s;
+}
+.grey .container nav ul li:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+.grey .container nav ul li:hover::after {
+    height: 100%;
+    opacity: 1;
+}
+.grey .container nav ul li:hover {
+    color: white;
 }
