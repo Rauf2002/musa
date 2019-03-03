@@ -642,3 +642,115 @@ div:nth-child(4)  .rect section:hover {
     font-weight: 600;
     font-family: 'Dosis', sans-serif;
 }
+/* .grey Ends */
+/* People Starts */
+ .members section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.experts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experts .people {
+    width: 93%;
+    position: relative;
+    height: 291px;
+}
+.people div {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #212529ce;
+    opacity: 0;
+    transition:all 0.4s ease-in-out;
+}
+.people:hover .black {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+.people section {
+    width: 0%;
+    height: 20%;
+    left: 5%;
+    top: 20%;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.people:hover section {
+    opacity: 1;
+    width: 90%;
+}
+.people section div {
+    width: 0px;
+    position: unset;
+    height: 0px;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.people:hover section div {
+    width: 20%;
+    height: 80%;
+    opacity: 1  ;
+}
+.people section div i {
+    margin: auto;
+    font-size: 15px;
+    color: white;
+}
+.people section div:hover  {
+    background-color: #00c9b1;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+.people img {
+    width: 100%;
+    height: 100%;
+}
+.experts p:nth-child(2) {
+    margin: 10px auto 5px auto;
+    color: #2e2e2e;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+}
+.experts p:nth-child(3) {
+    color: #00c9b1;
+    font-style: italic;
+    font-size: 14px;
+}
+.experts .line {
+    width: 93%;
+    padding-top: 8px;
+}
+.people::before {
+    content: "";
+    position: absolute;
+    border-right: 40vh solid white;
+    border-top: 60px solid transparent;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+.people:hover::before {
+    border-top: 0vh solid transparent;
+}
