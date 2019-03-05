@@ -212,6 +212,9 @@ div {
    margin-top: 80px;
    color: #2e2e2e
 }
+.container p:first-child,.container p:nth-child(2) {
+    line-height: 35px;
+}
 .container .line {
     width: 10%;
     padding-top: 20px;
@@ -565,6 +568,7 @@ div:nth-child(4)  .rect section:hover {
 .slider {
     font-family: 'Dosis', sans-serif;
     z-index: 1;
+    letter-spacing: 2px;
     position: relative;
     font-size: 14px;
     color: white;
@@ -846,6 +850,7 @@ div:nth-child(4)  .rect section:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     width: 30%;
     height: 434px;
+    transition:all 0.15s ease-in-out;
 }
 .license:nth-child(2) {
     background-color: #00c9b1;
@@ -873,4 +878,41 @@ div:nth-child(4)  .rect section:hover {
     letter-spacing: 2px;
     color: #232425;
     font-family: 'Dosis', sans-serif;
+}
+.license i {
+    color: #00c9b1;
+}
+.license:nth-child(2) p,.license:nth-child(2) ul li,.license:nth-child(2) small,.license:nth-child(2) i {
+    color: white;
+}
+.license:nth-child(2) .slider {
+    background-color: white;
+    color: #00c9b1;
+}
+.license:hover {
+    background-color: #00c9b1;
+}
+.license:hover p,.license:hover ul li,.license:hover small {
+    color: white ;
+    transition: all 0.15s ease-in-out;
+}
+.license:hover .slider {
+    border: 1px solid white;
+    transition: all 0.15s ease-in-out;
+}
+.license:hover span {
+    transition-delay: 0.1s;
+    transition: all 0.3s ease-in-out;
+}
+.license:hover ul li i {
+    color: white;
+    transition-delay: 0.1s;
+    transition: all 0.3s ease-in-out;
+}
+.license .slider:hover {
+    color: #00c9b1;
+}
+/* License Ends */
+div:nth-child(10) .container h1 {
+    letter-spacing: 2px;
 }
