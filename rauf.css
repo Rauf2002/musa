@@ -916,3 +916,100 @@ div:nth-child(4)  .rect section:hover {
 div:nth-child(10) .container h1 {
     letter-spacing: 2px;
 }
+div:nth-child(10) .container section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.post {
+    width: 32%;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.image {
+    width: 100%;
+    height: 250px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.post .content {
+    width: 90%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0px;
+}
+.content h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #232323; 
+}
+.content ul {
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.content ul li {
+    font-size: 14px;
+    color: #232323;
+    padding:0px 15px 0px 0px;;
+}
+.content ul li i {
+    color: #00c9b1;
+}
+.content ul li:hover {
+    transition: 0.5s;
+    color: #00c9b1;
+} 
+.content p {
+    line-height: 24px;
+    font-size: 14px;
+}
+.content div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.content div p:first-child {
+    cursor: pointer;
+} 
+.content div p:first-child span {
+    color: #00c9b1;
+}
+.content div p:first-child:hover {
+    transition: all 0.5s;
+    color:#00c9b1;
+}
+.content div p:last-child {
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    color: #888888;
+    font-size: 12px;
+    cursor: pointer;
+}
+.content div p:last-child:hover {
+    color: #00c9b1;
+    transition: all 0.5s;
+}
+.content div p:last-child span {
+    position: relative;
+}
+.content div p:last-child span::before {
+    border-bottom: 1px solid #00c9b1;
+    width: 0%;
+    position: absolute;
+    height: 30px;
+    content: "";
+    transition: all 0.5s;
+    opacity: 0;
+}
+.content div p:last-child:hover  span::before {
+    opacity: 1;
+    width: 100%;
+}
