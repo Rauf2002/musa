@@ -1059,6 +1059,7 @@ div:nth-child(11) .container h2 {
     border:none;
     text-indent: 10px;
     outline: none;
+    color: white;
 }
 .subscribe input::placeholder {
     font-weight: 300;
